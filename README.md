@@ -14,8 +14,8 @@ $ cd ..
 $ catkin_make
 $ source ~/.bashrc
 $ catkin_create_pkg mypkg rospy
-$ cd rospy
 $ git clone https://github.com/NATSUMETAKAFUMI/robosys2-ROS.git
+$ cd robosys2-ROS
 ```
 
 ROSのセットアップができたら下記の通り実行してください
