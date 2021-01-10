@@ -29,5 +29,8 @@ $ rosrun mypkg time.py
 
 ## 実行動画
 
+動画URL:https://youtu.be/XlBzx8qFLNo
+YouTubeにあげた実行動画はこちらになります
+
 ## ライセンス
 [BSD 3-Clause License](https://github.com/NATSUMETAKAFUMI/robosysws2-ROS/blob/main/LICENSE)
