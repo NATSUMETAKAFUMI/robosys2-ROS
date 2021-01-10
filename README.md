@@ -25,11 +25,17 @@ $ chmod +x time.py
 $ ls -l time.py
 $ rosrun mypkg time.py
 ```
+
+* プログラム６行目のhours=9の数字の部分を変えると日本以外の時間も調べることができます。 
+* 例:hours=8にすると北京の時刻を調べることができる
+* 例:hours=-10にするとハワイのの時刻を調べることができる  
+
 ---
 
 ## 実行動画
 
 動画URL:https://youtu.be/XlBzx8qFLNo
+
 YouTubeにあげた実行動画はこちらになります
 
 ## ライセンス
