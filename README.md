@@ -10,12 +10,24 @@
 ROSのインストール後下記の手順を行ってください
 ```sh
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/NATSUMETAKAFUMI/robosys2-ROS.git
 $ cd ..
 $ catkin_make
 $ source ~/.bashrc
+$ catkin_create_pkg mypkg rospy
+$ cd rospy
+$ git clone https://github.com/NATSUMETAKAFUMI/robosys2-ROS.git
+```
+
+ROSのセットアップができたら下記の通り実行してください
+```sh
+$ ls -l time.py
+$ chmod +x time.py
+$ ls -l time.py
+$ rosrun mypkg time.py
 ```
 ---
+
+## 実行動画
 
 ## ライセンス
 [BSD 3-Clause License](https://github.com/NATSUMETAKAFUMI/robosysws2-ROS/blob/main/LICENSE)
