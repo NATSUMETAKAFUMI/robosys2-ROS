@@ -15,6 +15,5 @@ print(dt_now)
 print(dt_now.tzinfo)
 
 while not rospy.is_shutdown():
-    n += 1
     pub.publish(n)
     rate.sleep()
