@@ -27,6 +27,13 @@ $ ls -l time.py
 $ rosrun robosys2-ROS time.py
 ```
 
+上記の通りに実行できたらトピックから動作確認を行ってください
+```sh
+$ rosnode list ←これを入力したときに/timeがあればＯＫ
+$ rostopic list　←これを入力したときに/time_searchがあればＯＫ
+$ rostopic echo /time_search
+```
+
 * プログラム６行目のhours=9の数字の部分を変えると日本以外の時間も調べることができます。 
 * 例:hours=8にすると北京の時刻を調べることができる
 * 例:hours=-10にするとハワイの時刻を調べることができる  
