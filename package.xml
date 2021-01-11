@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>mypkg</name>
+  <name>robosys2-ROS</name>
   <version>0.0.0</version>
-  <description>The mypkg package</description>
+  <description>The robosys2-ROS package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
