@@ -24,7 +24,7 @@ $ cd scripts
 $ ls -l time.py
 $ chmod +x time.py
 $ ls -l time.py
-$ rosrun mypkg time.py
+$ rosrun robosys2-ROS time.py
 ```
 
 * プログラム６行目のhours=9の数字の部分を変えると日本以外の時間も調べることができます。 
