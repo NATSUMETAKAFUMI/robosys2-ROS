@@ -3,10 +3,10 @@
 import rospy
 from std_msgs.msg import Date
 
-def talker():
+def callback(message):
    print("date : %d, time : %f" % (message.date, message.time))
     
-if __name__ == '__main__':
+if __name__ == "__main__":
    rospy.init_node('time_sub')
    sub = rospy.Subscriber('time_search', Date, callback)
    rospy.spin()
