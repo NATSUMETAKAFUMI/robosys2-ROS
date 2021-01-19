@@ -6,7 +6,7 @@ from std_msgs.msg import Date
 
 def talker():
     l = []
-    d = ():
+    d = ()
     rate = rospy.Rate(10)
 while not rospy.is_shutdown():
     d.data = ' '
