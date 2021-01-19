@@ -24,7 +24,7 @@ while not rospy.is_shutdown():
     rate.sleep()
     
 if __name__ == '__main__':
-    rospy.init_node('time')
+    rospy.init_node('time_pub')
     pub = rospy.Publisher('time_search', Data, queue_size=1)
     talker()
     rospy.spin()
