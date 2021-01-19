@@ -19,7 +19,7 @@ while not rospy.is_shutdown():
     for i in range(11,25):
         d.time += l[i]
     d.date = int(d.date.replace('_', ' '))
-    d.time = float(d.time.replace(';',' '))
+    d.time = float(d.time.replace(':',' '))
     pub.publish(d)
     rate.sleep()
     
