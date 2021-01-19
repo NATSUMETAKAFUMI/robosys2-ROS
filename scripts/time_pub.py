@@ -20,7 +20,7 @@ while not rospy.is_shutdown():
         d.time += l[i]
     d.date = int(d.date.replace('_', ' '))
     d.time = float(d.time.replace(';',' '))
-    pub.publisher(d)
+    pub.publish(d)
     rate.sleep()
     
 if __name__ == '__main__':
