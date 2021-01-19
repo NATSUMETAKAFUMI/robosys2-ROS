@@ -40,9 +40,10 @@ $ rosrun robosys2-ROS time_pub.py
 
 上記の通りに実行できたらトピックから動作確認を行ってください(端末3)
 ```sh
-$ rosnode list ←これを入力したときに/timeがあればＯＫ
+$ roslaunch robosys2-ROS date.launch
 $ rostopic list　←これを入力したときに/time_searchがあればＯＫ
 $ rostopic echo /time_search
+または$ rostopic echo /time_search --screen と入力すると見やすくなります
 ```
 
 ---
