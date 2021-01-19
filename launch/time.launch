@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="robosys2-ROS" name="time_pub" type="time_pub.py" />
+	<node pkg="robosys2-ROS" name="time_sub" type="time_sub.py" />
+</launch>
