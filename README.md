@@ -22,6 +22,7 @@ $ roscore
 
 ROSのセットアップができたら下記の通り実行してください(端末2)
 ```sh
+$ cd ~/catkin_ws/src/robosys2-ROS/scripts
 $ ls -l time_pub.py
 $ chmod +x time_pub.py
 $ ls -l time_pub.py
@@ -30,6 +31,7 @@ $ rosrun robosys2-ROS time_pub.py
 
 新しい端末を開いて実行してください(端末3)
 ```sh
+$ cd ~/catkin_ws/src/robosys2-ROS/scripts
 $ ls -l time_sub.py
 $ chmod +x time_sub.py
 $ ls -l time_sub.py
