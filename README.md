@@ -23,28 +23,22 @@ $ roscore
 ROSのセットアップができたら下記の通り実行してください(端末2)
 ```sh
 $ cd ~/catkin_ws/src/robosys2-ROS/scripts
-$ ls -l time_pub.py
 $ chmod +x time_pub.py
-$ ls -l time_pub.py
 $ rosrun robosys2-ROS time_pub.py
 ```
 
 新しい端末を開いて実行してください(端末3)
 ```sh
 $ cd ~/catkin_ws/src/robosys2-ROS/scripts
-$ ls -l time_sub.py
 $ chmod +x time_sub.py
-$ ls -l time_sub.py
 $ rosrun robosys2-ROS time_sub.py
 ```
 
 上記の通りに実行できたらトピックから動作確認を行ってください(端末3)
 ```sh
-$ cd ~/catkin
 $ roslaunch robosys2-ROS date.launch
 $ rostopic list　←これを入力したときに/time_searchがあればＯＫ
 $ rostopic echo /time_search
-または$ rostopic echo /time_search --screen と入力すると見やすくなります
 ```
 
 ---
