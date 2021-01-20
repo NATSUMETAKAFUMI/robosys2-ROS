@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import rospy
-from std_msgs.msg import Date
+from robosys2-ROS.msg import Date
 
 def callback(message):
    print("date : %d, time : %f" % (message.date, message.time))
