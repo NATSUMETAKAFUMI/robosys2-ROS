@@ -6,11 +6,11 @@ from std_msgs.msg import Date
 
 def talker():
     l = []
-    d = ()
+    d = Date()
     rate = rospy.Rate(10)
 while not rospy.is_shutdown():
-    d.date = ' '
-    l.time = ' '
+    d.date = ''
+    l.time = ''
     now = datetime.now()
     l = str(now)
     
@@ -18,8 +18,8 @@ while not rospy.is_shutdown():
         d.date += l[i]
     for i in range(11,25):
         d.time += l[i]
-    d.date = int(d.date.replace('_', ' '))
-    d.time = float(d.time.replace(':',' '))
+    d.date = int(d.date.replace('_', ''))
+    d.time = float(d.time.replace(':',''))
     pub.publish(d)
     rate.sleep()
     
