@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 import rospy
-from datetime import datetime
 from std_msgs.msg import Date
+from datetime import datetime
 
 def talker():
     l = []
@@ -11,6 +11,7 @@ def talker():
 while not rospy.is_shutdown():
     d.date = ''
     l.time = ''
+    
     now = datetime.now()
     l = str(now)
     
@@ -18,7 +19,7 @@ while not rospy.is_shutdown():
         d.date += l[i]
     for i in range(11,25):
         d.time += l[i]
-    d.date = int(d.date.replace('_', ''))
+    d.date = int(d.date.replace('-', ''))
     d.time = float(d.time.replace(':',''))
     pub.publish(d)
     rate.sleep()
