@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import rospy
-from std_msgs.msg import Date
+from robosys2-ROS.msg import Date
 from datetime import datetime
 
 def talker():
