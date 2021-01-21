@@ -14,9 +14,7 @@ $ git clone https://github.com/NATSUMETAKAFUMI/robosys2-ROS.git
 $ cd ~/catkin_ws
 $ catkin_make
 $ source ~/.bashrc
-$ cd src
-$ cd robosys2-ROS
-$ cd scripts
+$ cd src/sobosys2-ROS/scripts
 $ roscore
 ```
 
