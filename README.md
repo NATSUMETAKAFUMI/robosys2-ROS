@@ -36,7 +36,7 @@ $ rosrun robosys2-ROS time_sub.py
 
 上記の通りに実行できたらトピックから動作確認を行ってください(端末3)
 ```sh
-$ roslaunch robosys2-ROS date.launch
+$ roslaunch robosys2-ROS data.launch
 $ rostopic list　←これを入力したときに/time_searchがあればＯＫ
 $ rostopic echo /time_search
 ```
