@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
 import rospy
-from robosys2-ROS.msg import Date
+from std_msgs.msg import Float64
 
 def callback(message):
-   print("date : %d, time : %f" % (message.date, message.time))
-    
+    print(message.data)
+
 if __name__ == "__main__":
-   rospy.init_node('time_sub')
-   sub = rospy.Subscriber('time_search', Date, callback)
-   rospy.spin()
+    rospy.init_node('time_sub')
+    sub = rospy.Subscriber('time_search', Float64, callback)
+    rospy.spin()
