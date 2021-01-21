@@ -1,4 +1,4 @@
-# ROSを使って日本標準時間を表示してみた
+# ROSを使ってUNIX時間(秒)を表示してみた
 
 ## 動作環境
 ---
@@ -48,6 +48,7 @@ $ rostopic echo /time_search
 動画URL:https://youtu.be/XlBzx8qFLNo
 
 YouTubeにあげた実行動画はこちらになります
+※この出力された数値は1970年1月1日午前0時0分0秒からの経過秒数です。
 
 ## ライセンス
 [BSD 3-Clause License](https://github.com/NATSUMETAKAFUMI/robosysws2-ROS/blob/main/LICENSE)
